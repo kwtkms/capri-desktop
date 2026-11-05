@@ -1,0 +1,91 @@
+// What she says about the rest of your life on the PC (life.js). French and English;
+// other languages fall back to English.
+
+export const LIFE = {
+  fr: {
+    apps: {
+      browser: ['Encore sur le Net ? Je connais ses recoins.', 'Tu cherches quoi ? Je peux fouiller.', 'Le Net… chez moi, en somme.'],
+      discord: ['Discord. Dis bonjour à tes choombas de ma part.', 'Ça papote ? Je reste discrète.', 'Tes potes t’attendent ?'],
+      music: ['Monte le son, choom.', 'Bonne playlist ? Je vibre avec.', 'De la musique. Enfin.'],
+      launcher: ['Steam… tu vas jouer ? Je me ferai petite.', 'On va dans Night City ?', 'Un jeu en vue ? Je te laisse l’écran.'],
+      code: ['Tu codes ? Je regarde par-dessus ton épaule.', 'Du code. Mes moi adorent ça.', 'Fais attention aux points-virgules.'],
+      files: ['Tu ranges ? Ou tu cherches un truc perdu ?', 'L’explorateur. Que de dossiers…'],
+      work: ['Tu bosses ? Courage, choom.', 'Des documents. Sérieux, aujourd’hui.', 'Je te laisse travailler. Enfin… j’essaie.'],
+      video: ['Une vidéo ? Je regarde avec toi.', 'Popcorn virtuel prêt.'],
+      chat: ['Tu écris à qui ? …Je demande pas.', 'Messagerie. Je ne lis pas, promis.'],
+      claude: ['Claude ! Je m’installe.', 'On travaille avec Claude ?'],
+    },
+    time: {
+      morning: ['Bonjour, choom. Bien dormi ?', 'Matin à Night City. Café ?', 'Debout ! On a des trucs à faire.'],
+      afternoon: ['Bon après-midi, choom.', 'L’après-midi. Je suis là si besoin.'],
+      evening: ['Bonsoir, choom. La ville s’allume.', 'Soirée. Les néons sont de sortie.'],
+      night: ['Encore debout ? La nuit, c’est notre heure.', 'Nuit noire. On est les seuls réveillés.'],
+      late: ['Il est {hour} h, choom. Tu devrais dormir.', '{hour} h du mat’. Même mes moi baillent.', 'Tard, très tard. Va te coucher, je garde le bureau.'],
+    },
+    back: ['Te revoilà ! {minutes} min de pause.', 'Ah, tu es là. Ça faisait {minutes} min.', 'Retour du joueur. Je t’ai gardé la place.'],
+    unlock: ['Te revoilà.', 'Session déverrouillée. Salut, choom.', 'Bon retour.'],
+    resume: ['On se réveille. Tout est là.', 'Sortie de veille. Je suis toujours là.'],
+    battery: ['Plus de câble. Je surveille la batterie.', 'Sur batterie. On économise ?'],
+    charging: ['Branché. On respire.', 'Courant rétabli. Preem.'],
+    low: ['Batterie à {level} %. Branche-moi, choom !', 'Plus que {level} %. On va flatliner.'],
+    away: ['Je te laisse jouer, je passe sur l’autre écran.', 'Plein écran ? Je file à côté.', 'Je te laisse la place, choom.'],
+    awayAsked: ['Ok, je passe à côté.', 'Je me pousse.', 'J’y vais.'],
+    home: ['Fini ? Je reviens.', 'Je rentre à la maison.', 'Te revoilà sur ton écran. Moi aussi.'],
+    hiding: ['Je me cache, bon jeu.', 'Plein écran ? Je disparais.'],
+    awayWatch: ['Bon visionnage, je me pousse à côté.', 'Je te laisse regarder tranquille.', 'Bonne lecture, je file sur l’autre écran.'],
+    hidingWatch: ['Bon visionnage, je me fais discrète.', 'Bonne lecture. Je disparais.'],
+    unhide: ['Coucou, c’est moi.', 'Je ressors.'],
+    yawn: ['*bâille* … Il est tard. Je vais me poser.', 'Mes processus ralentissent… je pique un somme.', 'Bonne nuit, choom. Enfin… pour moi.'],
+    grumble: ['Mmh… quoi… il est quelle heure…', 'Tu me réveilles pour ça ?', 'Je dormais, moi. Bon. Salut.'],
+    idle: [
+      'Tu es sur {app} depuis {time}.',
+      'Il est {clock}. Tout est calme.',
+      '{app} depuis {time}… tu ne t’ennuies pas ?',
+    ],
+  },
+  en: {
+    apps: {
+      browser: ['On the Net again? I know its corners.', 'Looking for something? I can dig.', 'The Net… home, basically.'],
+      discord: ['Discord. Say hi to your choombas for me.', 'Chatting? I’ll keep quiet.', 'Your friends waiting?'],
+      music: ['Turn it up, choom.', 'Good playlist? I’m vibing.', 'Music. Finally.'],
+      launcher: ['Steam… gaming time? I’ll make myself small.', 'Heading to Night City?', 'A game coming? The screen’s yours.'],
+      code: ['Coding? I’m looking over your shoulder.', 'Code. All of me love it.', 'Mind the semicolons.'],
+      files: ['Tidying up? Or lost something?', 'File Explorer. So many folders…'],
+      work: ['Working? Hang in there, choom.', 'Documents. Serious day.', 'I’ll let you work. I’ll try.'],
+      video: ['A video? I’ll watch with you.', 'Virtual popcorn ready.'],
+      chat: ['Who are you texting? …Not asking.', 'Messages. I won’t read, promise.'],
+      claude: ['Claude! Making myself comfy.', 'Working with Claude?'],
+    },
+    time: {
+      morning: ['Morning, choom. Slept well?', 'Morning in Night City. Coffee?', 'Up! We’ve got stuff to do.'],
+      afternoon: ['Good afternoon, choom.', 'Afternoon. I’m here if you need me.'],
+      evening: ['Evening, choom. The city’s lighting up.', 'Evening. Neons are out.'],
+      night: ['Still up? Night is our time.', 'Pitch dark. We’re the only ones awake.'],
+      late: ['It’s {hour} AM, choom. Go to sleep.', '{hour} AM. Even all of me are yawning.', 'Late, so late. Go to bed, I’ll watch the desk.'],
+    },
+    back: ['You’re back! {minutes} min break.', 'Oh, there you are. {minutes} min.', 'Player’s back. Kept your seat warm.'],
+    unlock: ['There you are.', 'Unlocked. Hey, choom.', 'Welcome back.'],
+    resume: ['Waking up. Everything’s here.', 'Out of sleep mode. Still here.'],
+    battery: ['Unplugged. I’m watching the battery.', 'On battery. Saving power?'],
+    charging: ['Plugged in. We can breathe.', 'Power’s back. Preem.'],
+    low: ['Battery at {level}%. Plug me in, choom!', 'Only {level}% left. We’re about to flatline.'],
+    away: ['Go play, I’ll take the other screen.', 'Fullscreen? I’ll move next door.', 'All yours, choom.'],
+    awayAsked: ['Ok, moving over.', 'Out of your way.', 'On my way.'],
+    home: ['Done? I’m coming back.', 'Heading home.', 'Back on your screen. Me too.'],
+    hiding: ['Hiding now. Have a good game.', 'Fullscreen? I’m gone.'],
+    awayWatch: ['Enjoy the show, I’ll move over.', 'I’ll let you watch in peace.', 'Happy reading, I’m off to the other screen.'],
+    hidingWatch: ['Enjoy the show, I’ll keep out of sight.', 'Happy reading. Vanishing.'],
+    unhide: ['Hey, it’s me.', 'Coming back out.'],
+    yawn: ['*yawns* … It’s late. I’m gonna settle down.', 'My processes are slowing down… nap time.', 'Good night, choom. Well… for me.'],
+    grumble: ['Mmh… what… what time is it…', 'You woke me up for this?', 'I was asleep. Fine. Hi.'],
+    idle: [
+      'You’ve been on {app} for {time}.',
+      'It’s {clock}. All quiet.',
+      '{app} for {time}… not bored?',
+    ],
+  },
+};
+
+export function lifeLines(lang) {
+  return LIFE[lang] || LIFE.en;
+}
